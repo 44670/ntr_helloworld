@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FA6251E-EA1E-4359-9E7A-AB7FA1156025}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>build.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>build.bat</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>./include;./include/libntrplg;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>build.py</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>build.py</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\libctru\AC.c" />
+    <ClCompile Include="source\libctru\FS.c" />
+    <ClCompile Include="source\libctru\OS.c" />
+    <ClCompile Include="source\libctru\SOC.c" />
+    <ClCompile Include="source\libctru\srv.c" />
+    <ClCompile Include="source\libntrplg\pm.c" />
+    <ClCompile Include="source\libntrplg\rt.c" />
+    <ClCompile Include="source\libntrplg\sharedfunc.c" />
+    <ClCompile Include="source\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ctr\AC.h" />
+    <ClInclude Include="include\ctr\APT.h" />
+    <ClInclude Include="include\ctr\CFGNOR.h" />
+    <ClInclude Include="include\ctr\CSND.h" />
+    <ClInclude Include="include\ctr\FS.h" />
+    <ClInclude Include="include\ctr\GPU.h" />
+    <ClInclude Include="include\ctr\GSP.h" />
+    <ClInclude Include="include\ctr\GX.h" />
+    <ClInclude Include="include\ctr\HID.h" />
+    <ClInclude Include="include\ctr\HTTPC.h" />
+    <ClInclude Include="include\ctr\IR.h" />
+    <ClInclude Include="include\ctr\OS.h" />
+    <ClInclude Include="include\ctr\SHDR.h" />
+    <ClInclude Include="include\ctr\SOC.h" />
+    <ClInclude Include="include\ctr\srv.h" />
+    <ClInclude Include="include\ctr\svc.h" />
+    <ClInclude Include="include\libntrplg\3dstypes.h" />
+    <ClInclude Include="include\libntrplg\constants.h" />
+    <ClInclude Include="include\libntrplg\func.h" />
+    <ClInclude Include="include\libntrplg\global.h" />
+    <ClInclude Include="include\libntrplg\netdb.h" />
+    <ClInclude Include="include\libntrplg\ns\ns.h" />
+    <ClInclude Include="include\libntrplg\sharedfunc.h" />
+    <ClInclude Include="include\libntrplg\xprintf.h" />
+    <ClInclude Include="include\netinet\tcp.h" />
+    <ClInclude Include="include\sys\socket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="payload.bin" />
+    <None Include="source\libntrplg\stub.s" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

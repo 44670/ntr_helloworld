@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libctru">
+      <UniqueIdentifier>{09e718d8-8c25-475a-9d1d-120242e39b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libctru">
+      <UniqueIdentifier>{4ab0798e-3592-4464-a64f-f0b6d0c4ac22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libntrplg">
+      <UniqueIdentifier>{244a5ab2-7b6b-491f-ace1-273eaa4d0551}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libctru\AC.c">
+      <Filter>Source Files\libctru</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libctru\FS.c">
+      <Filter>Source Files\libctru</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libctru\OS.c">
+      <Filter>Source Files\libctru</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libctru\SOC.c">
+      <Filter>Source Files\libctru</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libctru\srv.c">
+      <Filter>Source Files\libctru</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libntrplg\pm.c">
+      <Filter>Source Files\libntrplg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libntrplg\rt.c">
+      <Filter>Source Files\libntrplg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libntrplg\sharedfunc.c">
+      <Filter>Source Files\libntrplg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ctr\OS.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\SHDR.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\SOC.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\socket.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\srv.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\svc.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\netinet\tcp.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\HTTPC.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\HID.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\GX.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\GSP.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\GPU.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\FS.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\CSND.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\CFGNOR.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\APT.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\AC.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctr\IR.h">
+      <Filter>Header Files\libctru</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\ns\ns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\3dstypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\netdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\sharedfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libntrplg\xprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="payload.bin">
+      <Filter>Header Files\Resource Files</Filter>
+    </None>
+    <None Include="source\libntrplg\stub.s">
+      <Filter>Source Files\libntrplg</Filter>
+    </None>
+  </ItemGroup>
+</Project>
